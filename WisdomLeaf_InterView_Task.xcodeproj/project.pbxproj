@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4201A8B029F79F08005BFA39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8AF29F79F08005BFA39 /* AppDelegate.swift */; };
+		4201A8B229F79F08005BFA39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8B129F79F08005BFA39 /* SceneDelegate.swift */; };
+		4201A8B429F79F08005BFA39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8B329F79F08005BFA39 /* ViewController.swift */; };
+		4201A8B729F79F08005BFA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201A8B529F79F08005BFA39 /* Main.storyboard */; };
+		4201A8BA29F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8B829F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodeld */; };
+		4201A8BC29F79F0A005BFA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4201A8BB29F79F0A005BFA39 /* Assets.xcassets */; };
+		4201A8BF29F79F0A005BFA39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201A8BD29F79F0A005BFA39 /* LaunchScreen.storyboard */; };
+		4201A8C729F7A070005BFA39 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8C629F7A070005BFA39 /* DataViewController.swift */; };
+		4201A8C929F7AB83005BFA39 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8C829F7AB83005BFA39 /* DataModel.swift */; };
+		4201A8CB29F7AB8F005BFA39 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8CA29F7AB8F005BFA39 /* ViewModel.swift */; };
+		4201A8CD29F7AB9C005BFA39 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8CC29F7AB9C005BFA39 /* DataService.swift */; };
+		4201A8CF29F7AC00005BFA39 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8CE29F7AC00005BFA39 /* HTTPHelper.swift */; };
+		4201A8D129F7B548005BFA39 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8D029F7B548005BFA39 /* Loader.swift */; };
+		4201A8D329F7B564005BFA39 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8D229F7B564005BFA39 /* Alert.swift */; };
+		4201A8D529F7B5A5005BFA39 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201A8D429F7B5A5005BFA39 /* ProductListTableViewCell.swift */; };
+		4D469852D688E5A3F0B4B6A7 /* Pods_WisdomLeaf_InterView_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A7C20C075B30A5820BF358 /* Pods_WisdomLeaf_InterView_Task.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		293D297363AAC805DDAA9B09 /* Pods-WisdomLeaf_InterView_Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLeaf_InterView_Task.release.xcconfig"; path = "Target Support Files/Pods-WisdomLeaf_InterView_Task/Pods-WisdomLeaf_InterView_Task.release.xcconfig"; sourceTree = "<group>"; };
+		4201A8AC29F79F08005BFA39 /* WisdomLeaf_InterView_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomLeaf_InterView_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4201A8AF29F79F08005BFA39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4201A8B129F79F08005BFA39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4201A8B329F79F08005BFA39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4201A8B629F79F08005BFA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4201A8B929F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WisdomLeaf_InterView_Task.xcdatamodel; sourceTree = "<group>"; };
+		4201A8BB29F79F0A005BFA39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4201A8BE29F79F0A005BFA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4201A8C029F79F0A005BFA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4201A8C629F7A070005BFA39 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		4201A8C829F7AB83005BFA39 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		4201A8CA29F7AB8F005BFA39 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4201A8CC29F7AB9C005BFA39 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4201A8CE29F7AC00005BFA39 /* HTTPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
+		4201A8D029F7B548005BFA39 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		4201A8D229F7B564005BFA39 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		4201A8D429F7B5A5005BFA39 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		C93037783E63FECDCDD70F01 /* Pods-WisdomLeaf_InterView_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomLeaf_InterView_Task.debug.xcconfig"; path = "Target Support Files/Pods-WisdomLeaf_InterView_Task/Pods-WisdomLeaf_InterView_Task.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A7C20C075B30A5820BF358 /* Pods_WisdomLeaf_InterView_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisdomLeaf_InterView_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4201A8A929F79F08005BFA39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D469852D688E5A3F0B4B6A7 /* Pods_WisdomLeaf_InterView_Task.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090583FDC93EDA73C827CE60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C93037783E63FECDCDD70F01 /* Pods-WisdomLeaf_InterView_Task.debug.xcconfig */,
+				293D297363AAC805DDAA9B09 /* Pods-WisdomLeaf_InterView_Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4201A8A329F79F08005BFA39 = {
+			isa = PBXGroup;
+			children = (
+				4201A8AE29F79F08005BFA39 /* WisdomLeaf_InterView_Task */,
+				4201A8AD29F79F08005BFA39 /* Products */,
+				090583FDC93EDA73C827CE60 /* Pods */,
+				DA35BF830428A3F76EB128FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4201A8AD29F79F08005BFA39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8AC29F79F08005BFA39 /* WisdomLeaf_InterView_Task.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4201A8AE29F79F08005BFA39 /* WisdomLeaf_InterView_Task */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8AF29F79F08005BFA39 /* AppDelegate.swift */,
+				4201A8B129F79F08005BFA39 /* SceneDelegate.swift */,
+				4201A8DD29F7FB34005BFA39 /* StoryBoard */,
+				4201A8DC29F7FB12005BFA39 /* AlertFunction */,
+				4201A8DB29F7FB04005BFA39 /* Loaders */,
+				4201A8DA29F7FAE2005BFA39 /* ApiHelper */,
+				4201A8D929F7FAD5005BFA39 /* Services */,
+				4201A8D829F7FAC5005BFA39 /* ViewModels */,
+				4201A8D729F7FAB4005BFA39 /* DataModels */,
+				4201A8D629F7FA99005BFA39 /* Controllers */,
+				4201A8BB29F79F0A005BFA39 /* Assets.xcassets */,
+				4201A8C029F79F0A005BFA39 /* Info.plist */,
+				4201A8B829F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodeld */,
+			);
+			path = WisdomLeaf_InterView_Task;
+			sourceTree = "<group>";
+		};
+		4201A8D629F7FA99005BFA39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8D429F7B5A5005BFA39 /* ProductListTableViewCell.swift */,
+				4201A8B329F79F08005BFA39 /* ViewController.swift */,
+				4201A8C629F7A070005BFA39 /* DataViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4201A8D729F7FAB4005BFA39 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8C829F7AB83005BFA39 /* DataModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		4201A8D829F7FAC5005BFA39 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8CA29F7AB8F005BFA39 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4201A8D929F7FAD5005BFA39 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8CC29F7AB9C005BFA39 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4201A8DA29F7FAE2005BFA39 /* ApiHelper */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8CE29F7AC00005BFA39 /* HTTPHelper.swift */,
+			);
+			path = ApiHelper;
+			sourceTree = "<group>";
+		};
+		4201A8DB29F7FB04005BFA39 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8D029F7B548005BFA39 /* Loader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		4201A8DC29F7FB12005BFA39 /* AlertFunction */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8D229F7B564005BFA39 /* Alert.swift */,
+			);
+			path = AlertFunction;
+			sourceTree = "<group>";
+		};
+		4201A8DD29F7FB34005BFA39 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4201A8BD29F79F0A005BFA39 /* LaunchScreen.storyboard */,
+				4201A8B529F79F08005BFA39 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		DA35BF830428A3F76EB128FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0A7C20C075B30A5820BF358 /* Pods_WisdomLeaf_InterView_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4201A8AB29F79F08005BFA39 /* WisdomLeaf_InterView_Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4201A8C329F79F0A005BFA39 /* Build configuration list for PBXNativeTarget "WisdomLeaf_InterView_Task" */;
+			buildPhases = (
+				720A9A08F8365044ACD31885 /* [CP] Check Pods Manifest.lock */,
+				4201A8A829F79F08005BFA39 /* Sources */,
+				4201A8A929F79F08005BFA39 /* Frameworks */,
+				4201A8AA29F79F08005BFA39 /* Resources */,
+				C569AF7C7C6AC647CA306D4D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WisdomLeaf_InterView_Task;
+			productName = WisdomLeaf_InterView_Task;
+			productReference = 4201A8AC29F79F08005BFA39 /* WisdomLeaf_InterView_Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4201A8A429F79F08005BFA39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4201A8AB29F79F08005BFA39 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 4201A8A729F79F08005BFA39 /* Build configuration list for PBXProject "WisdomLeaf_InterView_Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4201A8A329F79F08005BFA39;
+			productRefGroup = 4201A8AD29F79F08005BFA39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4201A8AB29F79F08005BFA39 /* WisdomLeaf_InterView_Task */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4201A8AA29F79F08005BFA39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4201A8BF29F79F0A005BFA39 /* LaunchScreen.storyboard in Resources */,
+				4201A8BC29F79F0A005BFA39 /* Assets.xcassets in Resources */,
+				4201A8B729F79F08005BFA39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		720A9A08F8365044ACD31885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WisdomLeaf_InterView_Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C569AF7C7C6AC647CA306D4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisdomLeaf_InterView_Task/Pods-WisdomLeaf_InterView_Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisdomLeaf_InterView_Task/Pods-WisdomLeaf_InterView_Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WisdomLeaf_InterView_Task/Pods-WisdomLeaf_InterView_Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4201A8A829F79F08005BFA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4201A8B429F79F08005BFA39 /* ViewController.swift in Sources */,
+				4201A8B029F79F08005BFA39 /* AppDelegate.swift in Sources */,
+				4201A8C729F7A070005BFA39 /* DataViewController.swift in Sources */,
+				4201A8CF29F7AC00005BFA39 /* HTTPHelper.swift in Sources */,
+				4201A8D129F7B548005BFA39 /* Loader.swift in Sources */,
+				4201A8D529F7B5A5005BFA39 /* ProductListTableViewCell.swift in Sources */,
+				4201A8B229F79F08005BFA39 /* SceneDelegate.swift in Sources */,
+				4201A8BA29F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodeld in Sources */,
+				4201A8C929F7AB83005BFA39 /* DataModel.swift in Sources */,
+				4201A8D329F7B564005BFA39 /* Alert.swift in Sources */,
+				4201A8CB29F7AB8F005BFA39 /* ViewModel.swift in Sources */,
+				4201A8CD29F7AB9C005BFA39 /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4201A8B529F79F08005BFA39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4201A8B629F79F08005BFA39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4201A8BD29F79F0A005BFA39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4201A8BE29F79F0A005BFA39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4201A8C129F79F0A005BFA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4201A8C229F79F0A005BFA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4201A8C429F79F0A005BFA39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93037783E63FECDCDD70F01 /* Pods-WisdomLeaf_InterView_Task.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WisdomLeaf_InterView_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.WisdomLeaf-InterView-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4201A8C529F79F0A005BFA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 293D297363AAC805DDAA9B09 /* Pods-WisdomLeaf_InterView_Task.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WisdomLeaf_InterView_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.WisdomLeaf-InterView-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4201A8A729F79F08005BFA39 /* Build configuration list for PBXProject "WisdomLeaf_InterView_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4201A8C129F79F0A005BFA39 /* Debug */,
+				4201A8C229F79F0A005BFA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4201A8C329F79F0A005BFA39 /* Build configuration list for PBXNativeTarget "WisdomLeaf_InterView_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4201A8C429F79F0A005BFA39 /* Debug */,
+				4201A8C529F79F0A005BFA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4201A8B829F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4201A8B929F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodel */,
+			);
+			currentVersion = 4201A8B929F79F08005BFA39 /* WisdomLeaf_InterView_Task.xcdatamodel */;
+			path = WisdomLeaf_InterView_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4201A8A429F79F08005BFA39 /* Project object */;
+}
